@@ -1,8 +1,10 @@
 # kernel
 CVE
 https://blog.lexfo.fr/cve-2017-11176-linux-kernel-exploitation-part1.html?fbclid=IwAR3RgccLYsTOCymab4Ncux9P1gcQjjMp93Bbtw5Lnc9-piQ_QjlclfZ7RAg
+
 tai lieu co dong
 https://cyseclabs.com/slides/smep_bypass.pdf?fbclid=IwAR2cZau-3tOT5jkd1JA0Ir0xL6jgoJhFKMmOcabRSf--Y9ocxl8riEJxDcs
+
 github ex kernel-exploitation-part1
 https://github.com/xairy/linux-kernel-exploitation?fbclid=IwAR08L7zj3JcUUbQzA_58aTZ6zwzi_F2ZlMoYS0mt_qB03q72HzneJqnixNk
 
