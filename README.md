@@ -24,14 +24,21 @@ Kernel là gì?
 
 Kernel chỉ đơn giản là code. kernel code thực thi cho các việc như:
 	- gõ phím. Khi bạn nhấn 1 phím, kernel code sẽ xử lý và nhận biết phím đó là gì và in ra màn hình cho bạn thấy.
+	
 	- xử lý mọi gói mạng vào ra.
+	
 	- viết files lịch sử vào trong ổ đĩa
+	
 	- cấp phát vùng nhớ
+	
 	- giao tiếp với card đồ họa
 
 Kernel là phần gần nhất với hệ điều hành, cung cấp dịch vụ cơ bản cho tât cả các phần khác của hệ thống, quản lý phần cứng, phân tán tài nguyên hệ thống.
+
 Kernel space và user space
+
 	- Kernel-space: đơn giản chỉ là vùng chứa code của kernel. Nó là vùng nhớ được bảo vệ với full quyền truy cập vào phần cứng và trạng thái của hệ thống. Hầu hết vùng nhớ được ánh xạ trực tiếp đến vùng nhớ vật lý tại một offset cố định.
+	
 	- User-space: là tập hợp các vùng mà các tiến trình người dùng chạy trên đó. Nó bao gồm process code (mã tiến trình), dữ liệu (data), và file ánh xạ vùng nhớ (memory mapped files). Trong user space thì vùng nhớ ánh xạ khác nhau từ một không gian địa chỉ đến một cái không gian địa chỉ khác.
 
 Sự chuyển đổi từ user mode sang kernel mode
