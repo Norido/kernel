@@ -28,8 +28,7 @@ Kernel space và user space
 	- Kernel-space: đơn giản chỉ là vùng chứa code của kernel. Nó là vùng nhớ được bảo vệ với full quyền truy cập vào phần cứng và trạng thái của hệ thống. Hầu hết vùng nhớ được ánh xạ trực tiếp đến vùng nhớ vật lý tại một offset cố định.
 	- User-space: là tập hợp các vùng mà các tiến trình người dùng chạy trên đó. Nó bao gồm process code (mã tiến trình), dữ liệu (data), và file ánh xạ vùng nhớ (memory mapped files).
 
-Tiến trình cung cấp cho ứng dụng một vùng địa chỉ ảo riêng, và vì riê nên nó có giới hạn. một tiến trình chạy trong user mode không thể
-truy cập vào địa chỉ ảo của hệ điều hành, để tránh ứng dụng có thể sửa đổi, gây tổn hại đến dữ liệu hệ điều hành.
+Tiến trình cung cấp cho ứng dụng một vùng địa chỉ ảo riêng, và vì riêng nên nó có giới hạn. một tiến trình chạy trong user mode không thể truy cập vào địa chỉ ảo của hệ điều hành, để tránh ứng dụng có thể sửa đổi, gây tổn hại đến dữ liệu hệ điều hành.
 
 Sự chuyển đổi từ user sang kernel khi ứng dụng thực thi 1 lệnh syscall bằng cách gọi trực tiếp trong trong shell hoặc gọi trong thư viện. Ví dụ như open('file.txt', O_RDONLY), thì lúc đó kernel sẽ thực thi thay cho tiến trình. 
 
